@@ -1,0 +1,3 @@
+'use client';
+import Link from 'next/link';
+export default function Home(){const items=[['Absensi','attendance'],['Complaint','complaint'],['Work Order','work-orders'],['PPM','ppm'],['Equipment','operations'],['KPI','kpi'],['Laporan','reports'],['PPM QC','ppm-qc'],['PPM Schedule','ppm-schedule'],['PPM Import','ppm-import']];return <main className="home"><section className="hero"><h1>BSS ENGINEERING</h1><p>Workforce Management System</p><p>Attendance • PPM • Complaint • Work Order • KPI</p></section><div className="grid">{items.map(([n,p])=><Link className="card" href={'/'+p} key={p}><b>{n}</b><small>Buka modul →</small></Link>)}</div><p className="foot">Database Supabase • Deploy Vercel</p></main>}

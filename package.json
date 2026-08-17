@@ -1,0 +1,1 @@
+{ "name": "bss-engineering-workforce", "version": "1.0.0", "private": true, "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "next lint", "preflight": "node tools/preflight.js" }, "dependencies": { "@supabase/ssr": "0.6.1", "@supabase/supabase-js": "2.55.0", "next": "14.2.35", "react": "18.3.1", "react-dom": "18.3.1", "xlsx": "0.18.5" } }
