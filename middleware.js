@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 const SUPABASE_URL=process.env.NEXT_PUBLIC_SUPABASE_URL||'https://fzjgktgvmavuirfipfha.supabase.co';
 const SUPABASE_KEY=process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY||'sb_publishable_kZnIPkZm9W_MOKFSErv-7w_u937Fz4w';
-const PUBLIC_PATHS = new Set(['/','/login']);
+const PUBLIC_PATHS = new Set(['/login']);
 
 export async function middleware(request){
  const response=NextResponse.next({request});
